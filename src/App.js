@@ -1,23 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import Login from './login';
+import Demo from './demo';
+import CitiesList from './citieslist'
+import DeptDetails from './deptdetails'
 
 function App() {
+  let uname="Swapz";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+    
+    <div>
+      <h1>
+        username: {uname}
+      </h1>
+      {/* <Login/>
+
+      <h3>
+        Developing web component in react
+      </h3> */}
+      
+      {/* <Demo/> */}
+      <CitiesList/>
+      <DeptDetails/>      
+      
     </div>
   );
 }
